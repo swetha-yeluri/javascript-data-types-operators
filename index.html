@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*****************************************
+         JavaScript Data Types & Operators
+         *****************************************/
+
+         /*SECtion 1 - Data Types */
+
+         // TASK 1: Primitive Data Types
+
+         let myName = "Swetha";
+         let myAge = 22;
+         let learningJS = true;
+         let city;
+         let address = null;
+
+         console.log(myName);
+         console.log(myAge);
+         console.log(learningJS);
+         console.log(city);
+         console.log(address);
+
+         //undefined -> declared but not assigned
+         //null -> assigned empty value
+
+         //TASK 2: Array Practice
+         let colors = ["red", "green", "blue", "yellow", "black"];
+
+         console.log(colors[0]);//first element
+         console.log(colors[colors.length - 1]);//last element
+         console.log(colors[2]);//third element
+         console.log(colors.length);//total elements
+
+         //TASK 3: Object Practice
+         let student = {
+            name: "Swetha",
+            skills:["Html", "css", "js"],
+            experience: "Fresher",
+            location:"India"
+         };
+
+         console.log(student.name);
+         console.log(student.skills);
+         student.role = "Frontend Developer";
+         console.log(student);
+
+         /* SECTION 2 - Arithmetic Operators */
+
+         // TASK 4: Basic Calculator
+         let x = 10;
+         let y = 3;
+
+         console.log(x + y);
+         console.log(x - y);
+         console.log(x * y);
+         console.log(x / y);
+         console.log(x % y);
+         console.log(x ** y);
+
+         // TASK 5: Increment & Decrement
+         let a = 5;
+         console.log(++a);// pre-increment
+
+         let b = 2;
+         console.log(b++);// post-increment
+         console.log(b);
+
+         /*SECTION 3 - Assignment Operators */
+
+         //TASK 6: Power Assignment
+         let num = 3;
+         num **= 4;
+         console.log(num);
+
+         /*Section 4 - Comparision Oerators */
+
+         // TASK 7: Equality Testing
+         console.log(5 == "5");
+         console.log(5 === "5");
+         console.log(0 == false);
+         console.log(0 === false);
+
+         /* SECTION 5 - Logical Operators */
+
+         //TASK 8: Login System (AND)
+         let username = "admin";
+         let password = "1234";
+
+         if (username === "admin" && password === "1234")
+         {
+            console.log("Login Success");
+         }
+         else
+         {
+            console.log("Login Failed");
+         }
+
+         // TASK 9: OR Condition
+         let role = "manager";
+
+         if (role === "admin" || role === "manager")
+         {
+            console.log("Access Granted");
+         }
+
+         // TASK 10: NOT Operator
+         let isLoggedIn = false;
+
+         if (!isLoggedIn)
+         {
+            console.log("User is NOT logged in");
+         }
+
+         /* SECTION 6 - Ternary Operator */
+
+         //TASK 11: Voting Eligibility
+         let age = 17;
+
+         let eligibility = age >= 18 ? "Eligible" : "Not Eligible";
+         console.log(eligibility);
+
+         /* FINAL TEAM CHALLENGE - Mini Profile System */
+
+         let user = {
+            name: "Arjun",
+            age: 22,
+            isLoggedIn: true,
+            skills: ["JS", "React"]
+         };
+
+         console.log(user.name);
+         console.log(user.skills[0]);
+
+         if (user.isLoggedIn && user.age >= 18)
+         {
+            console.log("Access Allowed");
+         }
+
+         let status = user.isLoggedIn ? "LoggedIn" : "Logged Out";
+         console.log(status);
+
+         user.age++;
+         console.log(user.age);
+
+         user.skills.push("Node.Js");
+         console.log(user);
+         
+
+        
+
+         
+         
+    </script>
+    
+</body>
+</html>
